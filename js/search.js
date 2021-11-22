@@ -23,7 +23,7 @@ const search = () => {
   };
 
   const getData = (value) => {
-    fetch("/db/db.json")
+    fetch("https://shop-f678e-default-rtdb.firebaseio.com/db.json")
       .then((response) => response.json())
       .then((data) => {
         const array = data.filter((good) =>
