@@ -7,12 +7,11 @@ const cart = () => {
     cart.style.display = "flex";
   };
 
-  cartBtn.addEventListener("click", onHandleClick);
-
   const onHandleClose = () => {
     cart.style.display = "";
   };
 
+  cartBtn.addEventListener("click", onHandleClick);
   closeBtn.addEventListener("click", onHandleClose);
 };
 
