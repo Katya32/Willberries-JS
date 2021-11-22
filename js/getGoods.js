@@ -22,7 +22,7 @@ const getGoods = () => {
   };
 
   const getData = (value, category) => {
-    fetch("/db/db.json")
+    fetch("../db/db.json")
       .then((response) => response.json())
       .then((data) => {
         const array = category
