@@ -38,10 +38,9 @@ const search = () => {
       });
   };
 
-  const onInputChange = (e) => {
+  input.addEventListener("input", (e) => {
     getData(input.value);
-  };
-
-  input.addEventListener("click", onInputChange);
+  });
 };
+
 search();
